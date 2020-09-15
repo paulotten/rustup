@@ -27,8 +27,8 @@ static TOOLCHAIN_CHANNELS: &[&str] = &[
     "nightly",
     "beta",
     "stable",
-    // Allow from 1.0.0 through to 9.999.99
-    r"\d{1}\.\d{1,3}\.\d{1,2}",
+    // Allow from 1.0.0 through to 9.999.[99|x]
+    r"\d{1}\.\d{1,3}\.[\d{1,2}|x]",
 ];
 
 #[derive(Debug)]
